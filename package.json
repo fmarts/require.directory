@@ -1,0 +1,26 @@
+{
+  "name": "reqdir",
+  "version": "0.1.0",
+  "description": "require directories without exporting them explicitly",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test",
+    "precommit": "npm test"
+  },
+  "keywords": [
+    "require",
+    "nodejs",
+    "directory"
+  ],
+  "author": "Fernando Martins",
+  "license": "MIT",
+  "dependencies": {
+    "lodash.camelcase": "^3.0.1",
+    "lodash.defaults": "^3.1.2",
+    "lodash.set": "^3.7.4"
+  },
+  "devDependencies": {
+    "chai": "^3.4.0",
+    "mocha": "^2.3.3"
+  }
+}
