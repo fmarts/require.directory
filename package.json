@@ -8,8 +8,8 @@
     "precommit": "npm test"
   },
   "keywords": [
+    "util",
     "require",
-    "nodejs",
     "directory"
   ],
   "author": "Fernando Martins",
