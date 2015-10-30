@@ -1,4 +1,4 @@
-reqdir()
+require-d()
 ========
 
 Looking for `require()`'ing entire directories into a single object?
@@ -40,12 +40,12 @@ You can instead `var routes = require('reqdir')('./routes')` and have everything
 
 Instalation
 -----------
-    npm i reqdir --save
+    npm i require-d --save
 
 
 Usage
 -----
-    var reqdir = require('reqdir');
+    var reqdir = require('require-d');
     var routes = reqdir('./routes');
 
     console.log(routes)
