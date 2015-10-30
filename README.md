@@ -25,7 +25,7 @@ Instead of creating `index.js` files where you `module.export` everything manual
       }
     }
 
-You can instead `var routes = require('reqdir')('./routes')` and have everything inside an object.
+You can `var routes = require('reqdir')('./routes')` and have everything inside an object.
     
     routes = { 
       routes: {
