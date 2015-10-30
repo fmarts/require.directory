@@ -1,47 +1,31 @@
-require-d()
-========
+require-d
+=========
 
 Looking for `require()`'ing entire directories into a single object?
 
-Motivation
-----------
+This module provides an utility that exposes directories as objects that you can use. 
 
-Having a structure like this
+This folder structure:
 
     routes/
-      index.js
       foo.js
       bar.json
       folder/
-        baz.js
+        baz.jsx
 
-Instead of creating `index.js` files where you `module.export` everything manually like so:
+Becomes this:
     
-    module.exports = {
-      foo: require('./foo'),
-      bar: require('./bar'),
+    var routes = {
+      foo: {},
+      bar: {},
       folder: {
-        baz: require('./folder/baz')
-      }
-    }
-
-You can `var routes = require('reqdir')('./routes')` and have everything inside an object.
-    
-    routes = { 
-      routes: {
-        foo: {},
-        bar: {},
-        folder: {
-          baz: {}
-        }
+        baz: {}
       }
     };
 
-
-Instalation
+Installation
 -----------
     npm i require-d --save
-
 
 Usage
 -----
@@ -49,11 +33,11 @@ Usage
     var routes = reqdir('./routes');
 
     console.log(routes)
-    // => { routes: { foo: { .. }, bar: { .. }, folder: { baz: { .. } } } }
+    // => { foo: { .. }, bar: { .. }, folder: { baz: { .. } } } 
 
 Options
 -------
-`extensions`: array of file extensions to load
+`extensions`: array of file extensions to load (default: `.js`, `.json`, `.jsx`)
 
 
 TODO
