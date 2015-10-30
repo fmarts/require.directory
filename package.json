@@ -1,6 +1,6 @@
 {
   "name": "require-d",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "require directories without exporting them explicitly",
   "main": "index.js",
   "scripts": {
