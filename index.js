@@ -24,11 +24,11 @@ function processDir(modules, options) {
 }
 
 function reqdir(_path, _options) {
-  let modules   = {};
+  let modules = {};
 
   const defaultOptions = {
     path: __dirname,
-    extensions: ['.json', '.js'],
+    extensions: ['.json', '.js', '.jsx'],
   };
 
   const options = defaults(_options || {}, defaultOptions);

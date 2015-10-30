@@ -16,7 +16,7 @@ describe('require a directory', function() {
   });
 
   it('should filter files using the extensions option', function() {
-    modules = reqdir('./fixtures', { extensions: ['.js'] });
+    modules = reqdir('./fixtures', { extensions: ['.js', '.jsx'] });
     expect(modules).to.be.an('object');
     expect(modules).to.have.property('foo');
     expect(modules).to.not.have.property('bar');
