@@ -1,6 +1,6 @@
 {
   "name": "req.dir",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "require directories recursively without exporting them explicitly",
   "repository": "fmmartins/req.dir",
   "main": "index.js",
@@ -8,8 +8,10 @@
     "test": "mocha test",
     "precommit": "npm test"
   },
-  "precommit" : {
-    "tasks" : ["npm run precommit"]
+  "precommit": {
+    "tasks": [
+      "npm run precommit"
+    ]
   },
   "keywords": [
     "util",
