@@ -23,7 +23,7 @@ function processDir(modules, options) {
   }
 }
 
-function reqdir(_path, _options) {
+function requireDir(_path, _options) {
   let modules = {};
 
   const defaultOptions = {
@@ -46,4 +46,4 @@ function reqdir(_path, _options) {
   return modules;
 }
 
-module.exports = reqdir;
+module.exports = requireDir;
