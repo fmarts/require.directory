@@ -1,7 +1,7 @@
-require-d
-=========
+req.dir
+=======
 
-Looking for `require()`'ing entire directories into a single object?
+Looking for `require()`'ing entire directories recursively into a single object?
 
 This module provides an utility that exposes directories as objects that you can use. 
 
@@ -25,11 +25,11 @@ Becomes this:
 
 Installation
 -----------
-    npm i require-d --save
+    npm i req.dir --save
 
 Usage
 -----
-    var reqdir = require('require-d');
+    var reqdir = require('req.dir');
     var routes = reqdir('./routes');
 
     console.log(routes)
