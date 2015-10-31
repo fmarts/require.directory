@@ -1,7 +1,8 @@
 {
   "name": "req.dir",
   "version": "1.0.0",
-  "description": "require directories without exporting them explicitly",
+  "description": "require directories recursively without exporting them explicitly",
+  "repository": "fmmartins/req.dir",
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
