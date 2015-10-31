@@ -1,11 +1,14 @@
 {
-  "name": "require-d",
-  "version": "0.1.1",
+  "name": "req.dir",
+  "version": "1.0.0",
   "description": "require directories without exporting them explicitly",
   "main": "index.js",
   "scripts": {
     "test": "mocha test",
     "precommit": "npm test"
+  },
+  "precommit" : {
+    "tasks" : ["npm run precommit"]
   },
   "keywords": [
     "util",
@@ -21,6 +24,7 @@
   },
   "devDependencies": {
     "chai": "^3.4.0",
-    "mocha": "^2.3.3"
+    "mocha": "^2.3.3",
+    "precommit": "^1.1.7"
   }
 }
