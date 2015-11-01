@@ -1,5 +1,5 @@
-req.dir
-=======
+require.directory
+=================
 
 Looking for `require()`'ing entire directories recursively into a single object?
 
@@ -23,23 +23,21 @@ Becomes this:
       }
     };
 
-Installation
------------
+### Installation
+
     npm i req.dir --save
 
-Usage
------
+### Usage
+
     var reqdir = require('req.dir');
     var routes = reqdir('./routes', { extensions: ['.js', '.json']}); // `extensions` is optional
 
     console.log(routes)
     // => { foo: { .. }, bar: { .. }, folder: { baz: { .. } } } 
 
-Options
--------
+### Options
 `extensions` (optional): array of file extensions to load (default: `.js`, `.json`, `.jsx`)
 
 
-TODO
-----
+### Roadmap
 * Accept array of paths to load multiple directories at once
