@@ -25,18 +25,18 @@ Becomes this:
 
 ### Installation
 
-    npm i req.dir --save
+    npm i require.directory --save
 
 ### Usage
 
-    var reqdir = require('req.dir');
-    var routes = reqdir('./routes', { extensions: ['.js', '.json']}); // `extensions` is optional
+    var requireDirectory = require('require.directory');
+    var routes = requireDirectory('./routes', { extensions: ['.js', '.json']});
 
     console.log(routes)
     // => { foo: { .. }, bar: { .. }, folder: { baz: { .. } } } 
 
 ### Options
-`extensions` (optional): array of file extensions to load (default: `.js`, `.json`, `.jsx`)
+`extensions`: array of file extensions to load (default: `.js`, `.json`, `.jsx`)
 
 
 ### Roadmap
