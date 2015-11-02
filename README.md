@@ -1,6 +1,8 @@
 require.directory
 =================
 
+[![Build Status](https://travis-ci.org/fmmartins/require.directory.svg?branch=v1.0.0)](https://travis-ci.org/fmmartins/require.directory)
+
 Looking for `require()`'ing entire directories recursively into a single object?
 
 This module provides an utility that exposes directories as objects that you can use. 
