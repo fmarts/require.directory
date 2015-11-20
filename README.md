@@ -43,3 +43,4 @@ Becomes this:
 
 ### Roadmap
 * Accept array of paths to load multiple directories at once
+* Add `flatten` option so that all required files have depth 1
