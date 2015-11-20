@@ -1,16 +1,16 @@
 'use strict';
 
-var fs        = require('fs');
-var path      = require('path');
-var set       = require('lodash.set');
-var camelCase = require('lodash.camelcase');
-var defaults  = require('lodash.defaults');
+const fs = require('fs');
+const path = require('path');
+const set = require('lodash.set');
+const camelCase = require('lodash.camelcase');
+const defaults = require('lodash.defaults');
 
 
 function processDir(modules, options) {
   return function loop(_path, str) {
     const files = fs.readdirSync(_path);
-    files.forEach(function(file) {
+    files.forEach((file) => {
       const filePath = path.resolve(_path, file);
       if (fs.statSync(filePath).isDirectory()) {
         loop(filePath, `${str}.${file}`);
